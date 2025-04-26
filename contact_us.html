@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London IT Firm</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <style>
+        .contact-header {
+            background: url('/Assets/img/abstract.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .contact-box {
+            background-color: rgba(246, 242, 242, 0.529);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+        .contact-box {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+<!-- Contact Info Section -->
+<header class="top-header">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <i class="fas fa-phone-alt"></i> +447881427935
+            <i class="fas fa-envelope ms-3"></i> Info@titsolutions.co.uk
+            <i class="fas fa-map-marker-alt ms-3"></i> One Bristol Place, Bristol, BS94QN, United Kingdom
+        </div>
+    </div>
+</header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="/Assets/img/tit_soluation.jpg" alt="TIT Logo" class="img-fluid" style="max-height: 55px; width: auto;">
+        </a>                       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu fade" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="web_development.html">Web Development</a></li>
+                        <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
+                        <li><a class="dropdown-item" href="digital_marketing.html">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="software_development.html">Software Development</a></li>
+                        <li><a class="dropdown-item" href="app_development.html">App Development</a></li>
+                        <li><a class="dropdown-item" href="dekstop.html">Desktop App Development</a></li>
+                        <li><a class="dropdown-item" href="ui_ux.html">UI/UX Design</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="our_team.html">Our Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+            </ul>
+        
+            <!-- Get in Touch button (hidden on mobile) -->
+            <a href="#contact" class="d-none d-md-block">
+                <button class="btn btn-sm btn-outline-dark rounded-0 ms-3">Get in Touch</button>
+            </a>
+        </div>        
+    </div>
+</nav>
+
+<section class="contact-header" data-aos="fade-down">
+    <div>
+        <h1 class="display-4 fw-bold text-light">Contact us</h1>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container text-center" data-aos="fade-up">
+        <p class="text-primary fw-bold">Get In Touch</p>
+        <h2 class="fw-bold">Contact for any query</h2>
+        <p class="text-muted">The contact form is currently inactive.</p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="contact-box h-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.0400557428197!2d-2.5946181!3d51.457421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e762ca6ee0b%3A0xe8f397e7b267fb33!2sNumber%20One%20Bristol!5e0!3m2!1sen!2sbd!4v1744282246557!5m2!1sen!2sbd" 
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="contact-box h-100">
+                    <h4 class="fw-bold">Head Office [UK]</h4>
+                    <p class="text-muted">One Bristol Place, Bristol<br>BS94QN,<br>United Kingdom.</p>
+                    <p><strong>Phone Number:</strong><span class="text-muted"><br>+447881427935<br>+447881427935</span></p>
+                    <p><strong>Email Address:</strong><br><span class="text-muted">Info@titsolutions.co.uk</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="contact-box h-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.274010869442!2d91.39654437491163!3d23.013709279179917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37536836ba04d9a9%3A0x1dca645bab087e81!2sSkill%20Based%20IT-%20SBIT!5e0!3m2!1sen!2sbd!4v1744282399803!5m2!1sen!2sbd"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="contact-box h-100">
+                    <h4 class="fw-bold">Feni Office</h4>
+                    <p class="text-muted">Yousuf Tower (1st Floor),<br>Hazi Fazal Master Lane,<br>Mizan Road Feni. <br>3900 Feni, Bangladesh.</p>
+                    <p><strong>Phone Number:</strong><span class="text-muted"><br>+8801840241895<br>+8801842-981245</span></p>
+                    <p><strong>Email Address:</strong><br><span class="text-muted">sbit.marketingteam@gmail.com</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact form -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="py-3 text-center">
+            <h1 class="fw-bold" style="color: #01A0DC;" data-aos="zoom-in">Contact Form</h1>
+        </div>
+        <div class="row">
+            <!-- About Us Image (Left Side) -->
+            <div class="col-lg-6 col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300">
+                <img src="./Assets/img/hand-coding.avif" alt="About Us" class="img-fluid rounded">
+            </div>
+
+            <!-- Admission Form (Right Side) -->
+            <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-duration="1300">
+                <div class="admission-form p-4 rounded bg-white">
+                    <h3 class="fw-bold text-center" style="color: #01A0DC;">Admission Form</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group mb-3">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="course">Course</label>
+                            <select class="form-select" id="course" required>
+                                <option value="" disabled selected>Select Course</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="it">Information Technology</option>
+                                <option value="ee">Electrical Engineering</option>
+                                <option value="me">Mechanical Engineering</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row text-md-start text-center">
+            <!-- Feni Branch -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <h5>Feni - <span class="fw-bold">Branch</span></h5>
+                <p>Hazi Fazal Master Lane, Yousuf Tower <br> 1st Floor, <br>
+                    Mizan Road Feni. 3900 Feni, <br> Bangladesh.</p>
+                <p>Tel: +8801844253601</p>
+                <p>WhatsApp: +8801840241895</p>
+            </div>
+    
+            <!-- United States Branch -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <h5>United States - <span class="fw-bold">Branch</span></h5>
+                <p>One Boston Place, Suite 2602, <br> Boston, <br> MA 02108, <br> United States.</p>
+                <p>Tel: +447881427935</p>
+                <p>WhatsApp: +447881427935</p>
+            </div>
+    
+            <!-- Important Links -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                <h5>Important - <span class="fw-bold">Link</span></h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Why Choose us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                <h5>SOCIAL - <span class="fw-bold">MEDIA</span></h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="copyright text-center">
+            <p>© 2011-2024 <a href="#">sbit.com.bd</a> All Rights Reserved.</p>
+        </div>
+    </div>        
+</footer>
+    
+
+<!-- Scroll to Top Button -->
+<div class="scroll-top" onclick="smoothScrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+    function smoothScrollToTop() {
+        const scrollDuration = 1000; // Duration of the scroll in milliseconds (1000ms = 1s)
+        const start = document.documentElement.scrollTop || document.body.scrollTop;
+        const startTime = performance.now();
+
+        function scrollStep(timestamp) {
+            const timeElapsed = timestamp - startTime;
+            const progress = Math.min(timeElapsed / scrollDuration, 1);
+            const currentScroll = start * (1 - progress);
+            window.scrollTo(0, currentScroll);
+
+            if (progress < 1) {
+                requestAnimationFrame(scrollStep);
+            }
+        }
+
+        requestAnimationFrame(scrollStep);
+    }
+</script>
+
+    <script src="./Assets/js/script.js"></script>
+    <script src="./Assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+</body>
+</html>

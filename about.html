@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IT Firm</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <style>
+        /* Hero Section */
+        .hero {
+            background: url('/Assets/img/about.webp') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .hero h1 { font-size: 3rem; font-weight: bold; }
+
+        /* About Section */
+        .about-content img { 
+            width: 100%; 
+            border-radius: 10px; 
+        }
+        .about_us_wrapper {
+            grid-row-gap: 1.75rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-top: 3rem;
+            display: flex;
+        }
+        .about_us_title {
+            grid-column-gap: 1.5rem;
+            grid-row-gap: 1.5rem;
+            background-color: #01A0DC;
+            text-align: left;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 30.6rem;
+            padding: 2.6rem 2.6rem 2.6rem 3rem;
+            display: flex;
+        }
+
+        .about-text {
+            line-height: 35px;
+            font-weight: 400;
+        }
+        /* Why Choose Us */
+        .feature-box {
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: 0.3s;
+        }
+        .feature-box:hover {
+            background: #e9ecef; 
+        }
+
+        /* Responsive Fix */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+        }
+        /* team section */
+        .team-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .team-card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .team-card:hover {
+            transform: scale(1.02);
+        }
+        .team-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 0;
+            border: 1px solid #007bff;
+        }
+        .team-card h5, .team-card p {
+            margin: 5px 0;
+            text-align: left;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .testimonial-card {
+            background-color: #01A0DC;
+            color: white;
+            padding: 30px;
+            position: relative;
+            max-width: 850px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+        }
+        .testimonial-card:hover{
+            background-color: #01A0DC;
+        }
+        .quote-icon {
+            font-size: 150px;
+            color: #ffb13d;
+            margin-right: 20px;
+        }
+        .testimonial-content {
+            flex-grow: 1;
+        }
+        .testimonial-text {
+            font-size: 22px;
+            font-weight: 400;
+            color: white;
+        }
+        .testimonial-author {
+            font-size: 16px;
+            text-align: right;
+            color: white;
+        }
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+
+        .contact-container {
+            background: white;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .btn-submit {
+            background-color: #01A0DC;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+        .btn-submit:hover {
+            background-color: #01A0DC;
+        }
+        .privacy-text {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .form-field{
+            border-radius: 8px;
+            height: 2.8rem;
+            margin-bottom: 0;
+        }
+        #privacyPolicy {
+            border-style: solid;
+            width: 14px;
+            height: 15px;
+            margin-top: 7px;
+            margin-right: 0.5rem;
+            margin-left: -19px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Info Section -->
+    <header class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-phone-alt"></i> +447881427935
+                <i class="fas fa-envelope ms-3"></i> Info@titsolutions.co.uk
+                <i class="fas fa-map-marker-alt ms-3"></i> One Bristol Place, Bristol, BS94QN, United Kingdom
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Assets/img/tit_soluation.jpg" alt="TIT Logo" class="img-fluid" style="max-height: 55px; width: auto;">
+            </a>                       
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu fade" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="web_development.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
+                            <li><a class="dropdown-item" href="digital_marketing.html">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="software_development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="app_development.html">App Development</a></li>
+                            <li><a class="dropdown-item" href="dekstop.html">Desktop App Development</a></li>
+                            <li><a class="dropdown-item" href="ui_ux.html">UI/UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="our_team.html">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+                </ul>
+            
+                <!-- Get in Touch button (hidden on mobile) -->
+                <a href="#contact" class="d-none d-md-block">
+                    <button class="btn btn-sm btn-outline-dark rounded-0 ms-3">Get in Touch</button>
+                </a>
+            </div>        
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="about_us_wrapper py-5">
+            <h1 class="text-light text-center" style="font-size: 5rem; font-weight: 700; line-height: 5rem;" data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-out">Let's Start Your Business Transformation Together</h1>
+            <div class="about_us_title" data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-out">
+                <div class="text-light" data-aos="fade-up" data-aos-delay="100">
+                    <strong>TIT</strong> is all about partnership, reliability, <br>
+                    and finding the right solutions together.
+                  </div>
+                  <div class="text-light mt-2" data-aos="fade-up" data-aos-delay="200">
+                    With years of expertise, we’re ready to take on new projects and offer full-cycle <br>
+                    custom software development services tailored to your business.
+                  </div>                  
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section container">
+        <div class="row align-items-center">
+          
+          <div class="col-md-12" data-aos="fade-left">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-text">
+                At TIT Solution, we believe in transforming ideas into impactful digital experiences. Founded by Taiful Hasan, our UK-based IT company specializes in delivering high-quality services in Graphics Design, Web Development, and Digital Marketing. We are passionate about helping businesses of all sizes build a strong digital presence and achieve measurable success online.
+            </p>
+            <p class="about-text">
+                With a creative and technically skilled team, TIT Solution blends innovation with strategy to offer customized solutions tailored to our clients' needs. Whether you’re a startup looking for a brand identity, an established company in need of a modern website, or an organization aiming to boost online visibility, we have the expertise to help you stand out in the digital world.
+            </p> 
+            <p class="about-text"> 
+                Our design team brings ideas to life with visually compelling graphics and brand assets. Our web developers create responsive, user-friendly websites with the latest technologies. Our digital marketing experts craft targeted strategies to drive traffic, generate leads, and increase conversions across multiple platforms.
+            </p>
+            <p class="about-text"> 
+                At TIT Solution, client satisfaction is our top priority. We work collaboratively, communicate transparently, and deliver on time—every time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <!-- mission and vission -->
+    <section class="about-section container mt-5">
+        <div class="row align-items-center">
+            <!-- Mission Section -->
+            <div class="col-lg-6 about-text" data-aos="fade-up" data-aos-duration="1500">
+                <h1 class="fw-bold mb-4" style="color: #01A0DC;">Mission</h1>
+                <p class="fs-5 text-secondary">
+                    At <strong>TIT</strong>, we specialize in creating custom solutions and business automation services 
+                    for small and mid-sized businesses. We balance cutting-edge innovations with proven methodologies 
+                    to ensure success.
+                </p>
+                <p class="fs-5 text-secondary">
+                    We collaborate with a variety of industries to fulfill their software development needs, 
+                    offering dedicated support and technical expertise at every stage.
+                </p>
+                <p class="fs-5 text-secondary">
+                    Our success lies in our people. We nurture a positive, growth-oriented work environment where our team 
+                    can thrive — because we believe happy employees create happy customers.
+                </p>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
+                <img src="./Assets/img/mission.webp" alt="Mission Image" class="img-fluid rounded-0">
+            </div>
+        </div>
+    
+        <div class="row align-items-center mt-5">
+            <!-- Vision Section -->
+            <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right" data-aos-duration="1500">
+                <img src="./Assets/img/vissoin.webp" alt="Vision Image" class="img-fluid rounded-0">
+            </div>
+            <div class="col-lg-6 about-text order-lg-2 order-1" data-aos="fade-up" data-aos-duration="1500">
+                <h1 class="fw-bold mb-4" style="color: #01A0DC;">Vision</h1>
+                <p class="fs-5 text-secondary">
+                    TIT is a successful software development and business automation company, delivering high-quality solutions
+                    with a sharp focus on actual client needs and long-term value.
+                </p>
+
+                <!-- Our Values -->
+                <h1 class="fw-bold mt-5 mb-4" style="color: #01A0DC;">Our Values</h1>
+                <ul class="fs-5 text-secondary">
+                    <li>Fostering respect and commitment within the company</li>
+                    <li>Striving for quality, transparency, and diligence at all levels</li>
+                    <li>Customer centricity at the heart of all processes</li>
+                    <li>Cultivating accountability and integrity with an aligned team vision</li>
+                    <li>Delivering unsurpassed value to customers</li>
+                    <li>Putting people over processes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- team section -->
+    <section>
+        <div class="container team-section">
+            <h2 class="fw-bold fs-1" data-aos="fade-up">We are a Team of <br> <span style="color: #01A0DC;">50+ IT Professionals</span></h2>
+            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 14px; color: #555;">
+                The <strong>TIT Software Team</strong> is focused on creating an <br>
+                environment where we can face your biggest challenges <br>
+                together and deliver a truly rewarding experience.
+              </p>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <img src="./Assets/img/about-team.png" alt="Konstantin Siomkin">
+                        <h5>Konstantin Siomkin</h5>
+                        <p class="text-muted">COO</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <img src="./Assets/img/about-team1.png" alt="Andrei Shvedau">
+                        <h5>Andrei Shvedau</h5>
+                        <p class="text-muted">CTO</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-card">
+                        <img src="./Assets/img/abou-team2.webp" alt="Anna Mitina">
+                        <h5>Anna Mitina</h5>
+                        <p class="text-muted">HR Director</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="team-card">
+                        <img src="./Assets/img/about-team3.avif" alt="Dzmitry Yermakou">
+                        <h5>Dzmitry Yermakou</h5>
+                        <p class="text-muted">Sales Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="testimonial-card">
+                <span class="quote-icon">&#8220;</span>
+                <div class="testimonial-content">
+                    <p class="testimonial-text text-light">We are a dedicated and knowledgeable team of professionals that <br> emphasizes customer satisfaction. We maintain open and <br> transparent communication channels throughout the development <br> process.</p>
+                    <hr>
+                    <div class="bottom-section">
+                        <p class="testimonial-author text-light">Konstantin Siomkin | COO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <img src="./Assets/img/full_team_about.jpg" alt="" class="img-fluid rounded-4">
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="contact-container" data-aos="fade-up">
+            <h2 class="text-center mb-4 fw-bold">How Can We Help You?</h2>
+            <p class="text-center text-muted" style="font-size: 14px;" data-aos="fade-up" data-aos-delay="100">
+                Get in touch with us, and we’ll gladly get back to you as soon as possible. <br>
+                If you need a professional team, <strong>TIT Software</strong> will be happy to assist you <br>
+                in turning your vision into reality.
+              </p>              
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Name*</label>
+                        <input type="text" class="form-control form-field" required>
+                        <label class="form-label mt-3 fw-bold">Email*</label>
+                        <input type="email" class="form-control form-field" required>
+                        <label class="form-label mt-3 fw-bold">Phone Number*</label>
+                        <input type="tel" class="form-control form-field" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">How can we help you?*</label>
+                        <textarea class="form-control" placeholder="Your Message" rows="9" required></textarea>
+                        
+                        <div class="form-check mt-2 checkbox">
+                            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                            <label class="form-check-label privacy-text" for="privacyPolicy">
+                                By submitting this form you agree to our privacy policy.
+                            </label>
+                        </div>
+                        
+                        <div class="text-end mt-3">
+                            <button type="submit" class="btn-submit">SUBMIT</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-md-start text-center">
+                <!-- Feni Branch -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <h5>Feni - <span class="fw-bold">Branch</span></h5>
+                    <p>Hazi Fazal Master Lane, Yousuf Tower <br> 1st Floor, <br>
+                        Mizan Road Feni. 3900 Feni, <br> Bangladesh.</p>
+                    <p>Tel: +8801844253601</p>
+                    <p>WhatsApp: +8801840241895</p>
+                </div>
+        
+                <!-- United States Branch -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <h5>United States - <span class="fw-bold">Branch</span></h5>
+                    <p>One Boston Place, Suite 2602, <br> Boston, <br> MA 02108, <br> United States.</p>
+                    <p>Tel: +447881427935</p>
+                    <p>WhatsApp: +447881427935</p>
+                </div>
+        
+                <!-- Important Links -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                    <h5>Important - <span class="fw-bold">Link</span></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Why Choose us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                    <h5>SOCIAL - <span class="fw-bold">MEDIA</span></h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="copyright text-center">
+                <p>© 2011-2024 <a href="#">sbit.com.bd</a> All Rights Reserved.</p>
+            </div>
+        </div>        
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" onclick="smoothScrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script>
+        function smoothScrollToTop() {
+            const scrollDuration = 1000; // Duration of the scroll in milliseconds (1000ms = 1s)
+            const start = document.documentElement.scrollTop || document.body.scrollTop;
+            const startTime = performance.now();
+    
+            function scrollStep(timestamp) {
+                const timeElapsed = timestamp - startTime;
+                const progress = Math.min(timeElapsed / scrollDuration, 1);
+                const currentScroll = start * (1 - progress);
+                window.scrollTo(0, currentScroll);
+    
+                if (progress < 1) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+    
+            requestAnimationFrame(scrollStep);
+        }
+    </script>
+
+    <script src="./Assets/js/script.js"></script>
+    <script src="./Assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

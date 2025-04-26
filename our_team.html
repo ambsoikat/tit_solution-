@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London IT Firm</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+    <style>
+        .contact-header {
+            background: url('/Assets/img/abstract.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .team-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .team-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ffeaa7;
+            margin: 0 auto 15px;
+        }
+
+        .team-name {
+            font-weight: 700;
+            color: #2d3436;
+        }
+
+        .team-role {
+            font-size: 0.9rem;
+            color: #636e72;
+        }
+
+        .team-exp {
+            font-size: 0.85rem;
+            color: #b2bec3;
+            margin: 5px 0 10px;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            color: #2d3436;
+        }
+
+        .social-icons a:hover {
+            color: #0984e3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Info Section -->
+    <header class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-phone-alt"></i> +447881427935
+                <i class="fas fa-envelope ms-3"></i> Info@titsolutions.co.uk
+                <i class="fas fa-map-marker-alt ms-3"></i> One Bristol Place, Bristol, BS94QN, United Kingdom
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Assets/img/tit_soluation.jpg" alt="TIT Logo" class="img-fluid" style="max-height: 55px; width: auto;">
+            </a>                       
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu fade" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="web_development.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
+                            <li><a class="dropdown-item" href="digital_marketing.html">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="software_development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="app_development.html">App Development</a></li>
+                            <li><a class="dropdown-item" href="dekstop.html">Desktop App Development</a></li>
+                            <li><a class="dropdown-item" href="ui_ux.html">UI/UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="our_team.html">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+                </ul>
+            
+                <!-- Get in Touch button (hidden on mobile) -->
+                <a href="#contact" class="d-none d-md-block">
+                    <button class="btn btn-sm btn-outline-dark rounded-0 ms-3">Get in Touch</button>
+                </a>
+            </div>        
+        </div>
+    </nav>
+
+<section class="contact-header" data-aos="fade-down">
+    <div>
+        <h1 class="display-4 fw-bold text-light">Our Team</h1>
+    </div>
+</section>
+
+<section class="team-section">
+
+    <div class="container">
+        <div class="row justify-content-center mb-4" data-aos="fade-up">
+            <div class="col-md-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">TAIFUL HASAN</div>
+                    <div class="team-role">CEO</div>
+                    <div class="team-exp">14 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-sm-6 col-lg-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">MANJUR AJAD</div>
+                    <div class="team-role">Project Manager</div>
+                    <div class="team-exp">8 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">SAMSUL KARIM TANIM</div>
+                    <div class="team-role">Senior Developer</div>
+                    <div class="team-exp">5 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">RIFAT RABBY</div>
+                    <div class="team-role">Java Application Developer</div>
+                    <div class="team-exp">6 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">MOBINUL ISLAM TAZIM</div>
+                    <div class="team-role">PHP/Laravel Developer</div>
+                    <div class="team-exp">3 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">MOHAMMAD ALA UDDIN</div>
+                    <div class="team-role">Web Designer</div>
+                    <div class="team-exp">3 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="team-card">
+                    <div class="team-img"></div>
+                    <div class="team-name">MOHAMMAD SHAHADAT HOSSAIN SUJON</div>
+                    <div class="team-role">Marketing Manager</div>
+                    <div class="team-exp">8 Years Experiences.</div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row text-md-start text-center">
+            <!-- Feni Branch -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <h5>Feni - <span class="fw-bold">Branch</span></h5>
+                <p>Hazi Fazal Master Lane, Yousuf Tower <br> 1st Floor, <br>
+                    Mizan Road Feni. 3900 Feni, <br> Bangladesh.</p>
+                <p>Tel: +8801844253601</p>
+                <p>WhatsApp: +8801840241895</p>
+            </div>
+    
+            <!-- United States Branch -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <h5>United States - <span class="fw-bold">Branch</span></h5>
+                <p>One Boston Place, Suite 2602, <br> Boston, <br> MA 02108, <br> United States.</p>
+                <p>Tel: +447881427935</p>
+                <p>WhatsApp: +447881427935</p>
+            </div>
+    
+            <!-- Important Links -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                <h5>Important - <span class="fw-bold">Link</span></h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Why Choose us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                <h5>SOCIAL - <span class="fw-bold">MEDIA</span></h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="copyright text-center">
+            <p>© 2011-2024 <a href="#">sbit.com.bd</a> All Rights Reserved.</p>
+        </div>
+    </div>        
+</footer>
+    
+<!-- Scroll to Top Button -->
+<div class="scroll-top" onclick="smoothScrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+    function smoothScrollToTop() {
+        const scrollDuration = 1000; // Duration of the scroll in milliseconds (1000ms = 1s)
+        const start = document.documentElement.scrollTop || document.body.scrollTop;
+        const startTime = performance.now();
+
+        function scrollStep(timestamp) {
+            const timeElapsed = timestamp - startTime;
+            const progress = Math.min(timeElapsed / scrollDuration, 1);
+            const currentScroll = start * (1 - progress);
+            window.scrollTo(0, currentScroll);
+
+            if (progress < 1) {
+                requestAnimationFrame(scrollStep);
+            }
+        }
+
+        requestAnimationFrame(scrollStep);
+    }
+</script>
+
+<script src="./Assets/js/script.js"></script>
+    <script src="./Assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
